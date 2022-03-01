@@ -1,0 +1,5 @@
+local.env
+server/**/__pycache__/
+tmp
+.vscode
+.idea

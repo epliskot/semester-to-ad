@@ -1,0 +1,19 @@
+version: '3'
+services:
+  api:
+    #image: docker.nmbu.no:5000/onb/nmbu-mq-to-ldap-service:${VERSION}
+    logging:
+      driver: "syslog"
+      options:
+        tag: "mq-to-ldap-service"
+    container_name: "mq-to-ldap-service"
+    hostname: "mq-to-ldap"
+    restart: "always"
+    env_file:
+      - ~/mq-to-ldap-service.env
+    environment:
+      - PYTHONPATH=${PYTHONPATH}:/app/server
+    volumes:
+      - ~/ldap.certificate:/ldap-server.certificate
+    network_mode: "host"
+    user: ${CURRENT_UID}

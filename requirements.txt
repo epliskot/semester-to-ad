@@ -1,0 +1,7 @@
+# For production code
+ldap3
+requests
+
+# For testing
+nose2
+responses
