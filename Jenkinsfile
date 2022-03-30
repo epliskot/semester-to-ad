@@ -45,13 +45,13 @@ pipeline {
 
     success {
       // notify users when the Pipeline finishes
-      mail to: 'kenneth.holter@nmbu.no',
+      mail to: 'jon.dellnes@nmbu.no',
         subject: "Pipeline ${currentBuild.fullDisplayName} finished successfully",
           body: "The pipeline ${env.BUILD_URL} has finished"
     }
     failure {
       // notify users when the Pipeline fails
-      mail to: 'kenneth.holter@nmbu.no',
+      mail to: 'jon.dellnes@nmbu.no',
           subject: "Failed Pipeline: ${currentBuild.fullDisplayName}",
           body: "Something is wrong with ${env.BUILD_URL}"
     }
