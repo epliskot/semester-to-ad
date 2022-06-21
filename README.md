@@ -1,5 +1,5 @@
 # semester-to-ad
-Semesterregistrerte students from FS to AD 
+Semesterregistrerte students from FS to AD. 
 # semester-to-ad
 Denne tjenesten kjører oppdatering av Active Directory (AD) basert data fra FS-api. Denne integrasjonen gjør uttrekk fra FS for studenter, for ønskede stedskoder. F.eks. alle studenter på Handelshøgskolen. Endepunktet som benyttes i Fsapi er semesterregistrering.
 
